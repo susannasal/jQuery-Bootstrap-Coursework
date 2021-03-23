@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+main {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #D1E8E2;
+    color: #026670;
+}
+
+p {
+    color: #026670;
+}
+
+header {
+    background-color: #026670;
+    color: white;
+}
+
+.navbar {
+    background-color: #FEF9C7 !important;
+}
+
+#valikko {
+    background-color: #FEF9C7;
+}
+
+#valikko a {
+    color: #026670;
+}
+
+#valikko a:hover {
+    background-color: #FCE181;
+    color: white;
+}
+
+.card {
+    font-size: 80%;
+    height: 100%;
+}
+
+.korttilinkki {
+    text-decoration: none;
+    color: #026670;
+}
+
+a {
+    text-decoration: none;
+    color: #026670;
+}
+
+a:hover {
+    color: #F4976C;
+}
+
+.korttilinkki:hover {
+    color: #F4976C;
+}
+
+/* .card:hover {
+    background-color: lightyellow;
+} */
+
+/* .quiz {
+    background-color: #DFDCE3;
+} */
+
+.quiz li{
+ list-style-type: none;   
+ padding-left: 40px;
+}
+
+.quiz p{
+    margin-bottom: 40px;
+}
+
+.quiz ul {
+padding-left: 0;
+}
+
+.quiz h6 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.form-check p {
+    font-style: italic;
+}
+
+#visa {
+    border-top: 1px dashed #026670;
+}
+
+.selected1 {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.right {
+    font-weight: bold;
+}
+
+.not_visible {
+    display: none;
+}
+
+#scorespan {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* #bmipage {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+} */
+
+/* #bmipage p {
+    color: black;
+} */
+
+.selected {
+    background-color: deepskyblue;
+}
+
+[data-bs-toggle="popover"] {
+    cursor: pointer;
+}
+
+a[data-bs-toggle="popover"]:focus {
+    outline: none;
+}
+
+#bmismall {
+    font-size: 50%;
+    font-weight: bold;
+}
+
+.fa-question-circle {
+    color: blue;
+}
+
+/* main {
+    background-color: snow;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 20px 20px;
+    font-family: tahoma;
+    border-radius: 10px;
+} */
+
+.gallery {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 10px 20px 20px 20px;  */
+
+}
+
+.gallery figure {
+    display: inline-block;
+    width: 30%;
+}
+
+img {
+    max-width: 100%;
+} 
+
+

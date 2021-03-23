@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Susanna Salakari" name="author">
+    <title>My Bootstrap project - SS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/salakari.css">
+</head>
+<body>
+    <main class="container-fluid">
+
+        <header class="row">
+            <div class="col-12">
+                <h1>My Bootstrap project</h1>
+            </div>
+            <!-- navbar: perusasettelu -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <!-- <div class="container-fluid"> -->
+                <!-- hampurilaisvalikko -->
+                <button type="button" class="navbar-toggler"
+                data-bs-toggle="collapse" data-bs-target="#valikko"
+                aria-controls="valikko" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- tästä alkaa varsinainen valikko -->
+                <div class="collapse navbar-collapse" id="valikko">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" 
+                            href="index.html">Tampere</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" 
+                            href="touristsSS.html">Matkailijat</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" 
+                            href="imagesSS.html">Kuvat</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" 
+                            href="parallaxSS.html">Parallax</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" 
+                            href="QuizSS.html">Visa</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" 
+                            href="bmiSS.html">BMI</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="row mt-5 mb-5">
+            <div class="col-md-5">
+                <figure class="figure">
+                    <img src="img/finlaysonArea.jpg" class="figure-img img-fluid" alt="finlayson area">
+                    <figcaption class="figure-caption text-center">Finlayson Factory Area</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-7">
+                <h2>Tampere</h2>
+                <p>Suomen suosituin asuin-, matkailu- ja opiskelukaupunki Tampere on elämäntapa, joka vie mukanaan. 
+                    Tampereen salaisuus on omintakeinen tavallisuus. Hyvä arki syntyy siitä, että Tampere on toimiva 
+                    kokonaisuus kompaktissa koossa. Kysyttäessä suomalaisilta, mihin he maassamme muuttaisivat, kolmasosa 
+                    heistä vastaa “Tampereelle”.</p>
+                <p>Tampereesta tekevät Tampereen kimaltavat järvet, humisevat harjut, kävelyyn sopiva mittakaava ja se, että 
+                    täällä tapahtuu aina. Historia tulee tykö jo ihan keskustassa, jota hallitsee Tammerkosken kansallismaisema 
+                    punatiilitehtaineen. Yhtä vahvasti kuin teollinen perintö, kaupunkiimme kuuluvat myös rakennustyömaat: täällä on 
+                    rakenteilla mm. ratikka, Suomen suurin elämysareena. Suomen ensimmäinen Marriott-hotelli avautui Tampereelle vuoden 
+                    2019 lopulla. Peritamperelaisia ilmiöitä ovat mustamakkara puolukkasoosilla, maailman parhaat munkit, kekseliäät 
+                    museot, saunapääkaupungin talviuintipaikat, aamukahvit Laukontorilla pienessä järvituu­lessa, tapahtumat toisensa 
+                    perään ja vireän viileä verkkaisuus.</p>
+                <address class="text-start">Source: <a href="https://visittampere.fi/info/tampereen-tarina/" 
+                    target="_blank">Visit Tampere</a></address>
+            </div>
+
+        </section>
+
+        <footer class="row mt-5">
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-start">Susanna Salakari<br>2021</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-end">Bootstrap and jQuery</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" 
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" 
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" 
+        crossorigin="anonymous"></script>
+    <script src="js/salakari.js"></script>
+</body>
+</html>

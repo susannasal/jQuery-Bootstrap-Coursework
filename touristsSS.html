@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Susanna Salakari" name="author">
+    <title>Tourists, My Bootstrap project – SS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/salakari.css">
+</head>
+<body>
+    <main class="container-fluid">
+
+        <header class="row">
+            <div class="col-12">
+                <h1>My Bootstrap project</h1>
+            </div>
+            <!-- navbar: perusasettelu -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light" id="navi">
+                <!-- <div class="container-fluid"> -->
+                    <!-- hampurilaisvalikko -->
+                    <button type="button" class="navbar-toggler"
+                    data-bs-toggle="collapse" data-bs-target="#valikko"
+                    aria-controls="valikko" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- tästä alkaa varsinainen valikko -->
+                    <div class="collapse navbar-collapse" id="valikko">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="index.html">Tampere</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="touristsSS.html">Matkailijat</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="imagesSS.html">Kuvat</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="parallaxSS.html">Parallax</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="QuizSS.html">Visa</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="bmiSS.html">BMI</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <section class="row mt-3">
+            <h2>Tourists</h2>
+        </section> 
+
+        <section class="row">
+
+            <div class="col-sm-6 col-md-3">
+                <!-- <a href="#" class="korttilinkki"> -->
+                <div class="card">
+                    <img src="img/saunakyltti.jpg" class="card-img-top" alt="saunakyltti">
+                    <div class="card-body">
+                        <h3 class="card-title">Sauna</h3>
+                        <p class="card-text">
+                            <div class="card-header">
+                                <a href="https://visittampere.fi/saunapaakaupunki/"><h6>Saunapääkaupunki</h6></a>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="https://visittampere.fi/kohteet/rajaportin-sauna/" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Rajaportin sauna</a></li>
+                                <li class="list-group-item"><a href="https://visittampere.fi/kohteet/nekalan-siirtolapuutarhan-sauna/" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Nekalan siirtolapuutarhan sauna</a></li>
+                                <li class="list-group-item"><a href="https://visittampere.fi/kohteet/hiedanrannan-yhteisollinen-sauna/" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Hiedanrannan yhteisöllinen sauna</a></li>
+                                <li class="list-group-item"><a href="https://visittampere.fi/kohteet/saunaravintola-kuuma/" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Saunaravintola Kuuma</a></li>
+                            </ul>
+                        </p>
+
+                        <h6><span class="badge bg-danger mt-3">HUOM!</span></h6>
+                        <p><b>Yleisiin saunoihin ei saa tulla sairaana, otathan muut huomioon!</b></p>
+                        
+                    </div>
+                </div>
+                <!-- </a> -->
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="img/vapriikki.jpg" class="card-img-top" alt="vapriikki">
+                    <div class="card-body">
+                        <h3 class="card-title">Museot ja taide</h3>
+                        <p class="card-subtitle mb-2 text-muted">Tampereen museotarjonnasta löytyy jokaiselle jotakin!</p>
+                        <p class="card-text">
+                            <ul>
+                                <li><a href="https://visittampere.fi/kohteet/museokeskus-vapriikki/" target="_blank">Museokeskus Vapriikki</a></li>
+                                <li><a href="https://visittampere.fi/kohteet/amurin-tyolaismuseokortteli/" target="_blank">Amurin työläismuseokortteli</a></li>
+                                <li><a href="https://visittampere.fi/kohteet/tampereen-taidemuseo/" target="_blank">Tampereen Taidemuseo</a></li>
+                                <li><a href="https://visittampere.fi/kohteet/muumimuseo/" target="_blank">Muumimuseo</a></li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <!-- <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Kotisivuille
+                            </a> -->
+                            <button class="btn btn-outline-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Lisätietoja
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Kaupungissa riittää tutkittavaa - taidemuseoita ja kiinnostavia erikoismuseoita koko perheelle! 
+                                <a href="https://museot.fi/tampereen-museot" target="_blank" class="text-start"><i>museot.fi</i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <a href="https://visittampere.fi/kohteet/hatanpaan-arboretum/" class="korttilinkki" target="_blank">
+                    <div class="card">
+                        <img src="img/arboretum.jpg" class="card-img-top" alt="arboretum">
+                        <div class="card-body">
+                            <h3 class="card-title">Hatanpään arboretum</h3>
+                            <p class="card-text">Arboretumin helmi on ruusutarha, joka sijaitsee Hatanpään kartanorakennuksen eteläpuolella. 
+                                Puistossa sijaitsevat myös Hatanpään kartano ja kaksi kesäkahvilaa. Ruusutarha rajautuu vanhaan kartanopuistoon. <i class="fa fa-arrow-right" aria-hidden="true"></i> </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card">
+                    <img src="img/pyynikki.jpg" class="card-img-top" alt="pyynikki">
+                    <div class="card-body">
+                        <h3 class="card-title">Pyynikin näkötorni ja kahvila</h3>
+                        <p class="card-text"><a href="https://www.munkkikahvila.net/" target="_blank"><i>"Munkki päivässä pitää pyllyn pyöreänä!"</i></a></p>
+                        <p>Vain parin korttelin päästä keskustasta löytyy Pyynikinharjun lenkkipolut, hiihtoladut ja hiekkarannat - näköalapaikoilta avautuu kauniit maisemat naapurikuntiin asti! 
+                            Alueen suosituin nähtävyys on kuitenkin näkötorin ja kuuluisa munkkikahvila!</p>
+                    </div>
+
+                    <div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headOne">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#One" aria-expanded="true" aria-controls="One">Näkötorni
+                                </button>
+                            </div>
+
+                            <div id="One" class="accordion-collapse collapse" data-bs-parent="#top" 
+                                aria-labelledby="headOne">
+                                <div class="accordion-body">
+                                    <p><strong>Upeat maisemat!</strong> <br><br> Herkullisista munkeistaan tunnettu persoonallinen kahvila sijaitsee näkötornin juurella. Näkötornista aukeavat upeat näköalat 
+                                        Tampereen keskustaan sekä Pyhäjärven ja Näsijärven maisemiin.</p> 
+                                    <address class="text-end"><i>Lähde: <a href="https://visittampere.fi/kohteet/pyynikin-nakotorni-ja-kahvila/" target="_blank">Visit Tampere</a></i></address>
+                                </div>
+                            </div>                  
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headTwo">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#Two" aria-expanded="false" aria-controls="Two">Kahvila
+                                </button>
+                            </div>
+
+                            <div id="Two" class="accordion-collapse collapse" data-bs-parent="#top"
+                                aria-labelledby="headTwo">
+                                <div class="accordion-body">
+                                    <p> <strong>Avoinna joka päivä!</strong> <br><br> Avoinna päivittäin klo 9-20 <br> (jouluaattona klo 9-16) <br><br> Osoite: Pyynikin näkötorni <br> Näkötornintie 20, Tampere <br><br> Puhelin: 03 212 3247</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+    
+
+        <footer class="row mt-5">
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-start">Susanna Salakari<br>2021</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-end">Bootstrap and jQuery</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" 
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" 
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" 
+        crossorigin="anonymous"></script>
+    <script src="js/salakari.js"></script>
+</body>
+</html>

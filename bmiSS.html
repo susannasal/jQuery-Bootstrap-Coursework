@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Susanna Salakari" name="author">
+    <title>BMI, My Bootstrap project - SS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/salakari.css">
+</head>
+<body>
+    <main class="container-fluid">
+
+        <!-- <div class="col-md  border-end border-secondary">
+            <h2>Messages</h2>
+            <button id="message2" class="btn btn-secondary"
+                type="button" onclick="message2();">Message 2</button>                       
+        </div>    -->
+
+        <header class="row">
+            <div class="col-12">
+                <h1>My Bootstrap project</h1>
+            </div>
+            <!-- navbar: perusasettelu -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <!-- <div class="container-fluid"> -->
+                    <!-- hampurilaisvalikko -->
+                    <button type="button" class="navbar-toggler"
+                    data-bs-toggle="collapse" data-bs-target="#valikko"
+                    aria-controls="valikko" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- tästä alkaa varsinainen valikko -->
+                    <div class="collapse navbar-collapse" id="valikko">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="index.html">My city</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="touristsSS.html">Tourists</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="imagesSS.html">Images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="parallaxSS.html">Parallax</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="QuizSS.html">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="bmiSS.html">BMI</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="row" id="bmipage">
+
+            <div class="col-sm-6 col-lg-3 mt-3" >
+                <h2>BMI <span id="bmismall">(Body Mass Index)</span></h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="svuosi" class="form-label">Birth year</label>
+                        <a data-bs-container="body" 
+                        data-bs-toggle="popover" 
+                        data-bs-placement="right" 
+                        title="What's my birth year?"
+                        data-bs-content="Birth year is the year you were born, silly!"
+                        data-bs-trigger="focus"
+                        tabindex="0">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </a>
+                        <input type="text" class="form-control bmiinputs" id="svuosi" placeholder="Four digits">
+                    </div>
+                    <div class="mb-3">
+                        <label for="paino" class="form-label">Weight (kg)</label>
+                        <a data-bs-container="body" 
+                        data-bs-toggle="popover" 
+                        data-bs-placement="right" 
+                        title="What is my weight?"
+                        data-bs-content="Better jump on a scale and check!"
+                        data-bs-trigger="focus"
+                        tabindex="0">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </a>
+                        <input type="text" class="form-control bmiinputs" id="paino" placeholder="full kilos, no decimals">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pituus" class="form-label">Height (cm)</label>
+                        <a data-bs-container="body" 
+                        data-bs-toggle="popover" 
+                        data-bs-placement="right" 
+                        title="What is my height?"
+                        data-bs-content="Measure from the top of your head to the tips of your toes - standing on tiptoes is CHEATING!"
+                        data-bs-trigger="focus"
+                        tabindex="0">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </a>
+                        <input type="text" class="form-control bmiinputs" id="pituus" placeholder="cms, no decimals">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="shownormal">
+                        <label class="form-check-label" for="shownormal">
+                          Show also my normal weight range
+                        </label>
+                        <a data-bs-container="body" 
+                        data-bs-toggle="popover" 
+                        data-bs-placement="right" 
+                        title="What is normal weight range?"
+                        data-bs-content="The amount you should weigh to be healthy!"
+                        data-bs-trigger="focus"
+                        tabindex="0">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="text-end mt-3">
+                        <button type="button" class="btn btn-primary btn-sm" id="bmibutton">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i> &nbsp; BMI</button>
+                    </div>
+                    <p id="testi9"></p>
+                </form> 
+            </div>
+
+            <div class="col-sm-6 col-lg-3 mt-3">
+                <h4>Results</h4>
+                <p>Your BMI: <span id="bmiresult"></span></p>
+                <p>Normal weight: <span id="normalresult"></span></p>
+                <p>Please do not use the BMI directly to measure
+                    fatness or slimness. The body mass index may
+                    have increased, for example, physique, due to
+                    muscularity or other factors
+                </p>
+                <div class="text-end mt-3">
+                    <button class="btn btn-primary btn-sm mb-3" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="bmiexpbtn">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; BMI explanation
+                    </button>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="list-group" id="bmiexpl">
+                            <li class="list-group-item range1" id="bmi1"> Severly underweight (BMI < 17)</li>
+                            <li class="list-group-item range1" id="bmi2"> Underweight (BMI = 17 - < 18.5)</li>
+                            <li class="list-group-item range1" id="bmi3"> Normal weight (BMI = 18.5 - < 25)</li>
+                            <li class="list-group-item range1" id="bmi4"> Overweight (BMI = 25 - < 30)</li>
+                            <li class="list-group-item range1" id="bmi5"> Moderately obese (BMI = 30 - < 35)</li>
+                            <li class="list-group-item range1" id="bmi6"> Severely obese (BMI = 35 - < 40)</li>
+                            <li class="list-group-item range1" id="bmi7"> Very severely obese (BMI >= 40)</li>
+                        </ul>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3 mt-3"> 
+                <h2>Waist control</h2>
+                <div>
+                    <label for="waist" class="col-form-label">Waist (cm)
+                    </label>                        
+                    <a data-bs-container="body" 
+                    data-bs-toggle="popover" 
+                    data-bs-placement="right" 
+                    title="Where exactly is waist?"
+                    data-bs-content="Waist is the part of the body between the pelvis and the stomach."
+                    data-bs-trigger="focus"
+                    tabindex="0">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    </a>
+                    <div>
+                        <input type="text" class="form-control" id="waist" placeholder="cms, no decimals">
+                    </div>
+                </div>
+
+                <!-- <i class="fa fa-question-circle-o" aria-hidden="true"></i> -->
+
+                <div class="mt-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="1"  >
+                        <label class="form-check-label" for="male">
+                          male
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline" checked>
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="2" checked>
+                        <label class="form-check-label" for="female">
+                          female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-end mt-3">
+                    <button type="button" class="btn btn-primary btn-sm" id="calcwaist"><i class="fa fa-heartbeat" aria-hidden="true"></i>&nbsp; Waist</button>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3 mt-3">
+                <h4>Results</h4>
+                <p>Your waist measurement is an indicator of the
+                    level of internal fat deposits which coat the
+                    heart, kidneys, liver, digestive organs and
+                    pancreas. This can increase the risk of heart
+                    disease and stroke.
+                </p>
+
+                <ul class="list-group">
+                    <li class="list-group-item range2" id="health1">No health risk</li>
+                    <li class="list-group-item range2" id="health2">Slight health risk</li>
+                    <li class="list-group-item range2" id="health3">Great health risk</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <footer class="row mt-5">
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-start">Susanna Salakari<br>2021</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-end">Bootstrap and jQuery</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!--  modal window definition -->
+    <div class="modal" tabindex="-1" id="mymessage">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="m_title">Missing input</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="m_body">
+                    <p>You need to write all input data</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>                        
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" 
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" 
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" 
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/salakari.js"></script>
+</body>
+</html>

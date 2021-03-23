@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Susanna Salakari" name="author">
+    <title>Quiz, My Bootstrap project - SS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/salakari.css">
+</head>
+<body>
+    <main class="container-fluid">
+
+        <header class="row">
+            <div class="col-12">
+                <h1>My Bootstrap project</h1>
+            </div>
+            <!-- navbar: perusasettelu -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <!-- <div class="container-fluid"> -->
+                    <!-- hampurilaisvalikko -->
+                    <button type="button" class="navbar-toggler"
+                    data-bs-toggle="collapse" data-bs-target="#valikko"
+                    aria-controls="valikko" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- tästä alkaa varsinainen valikko -->
+                    <div class="collapse navbar-collapse" id="valikko">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" 
+                                href="index.html">Tampere</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="touristsSS.html">Matkailijat</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="imagesSS.html">Kuvat</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="parallaxSS.html">Parallax</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="QuizSS.html">Visa</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" 
+                                href="bmiSS.html">BMI</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="row">
+            <div class="col-8 offset-2 col-md-6 offset-md-3 quiz">
+                <div>
+                    <h2 class="text-center mt-3">Quiz</h2>
+                    <p class="text-center">Tampere-aiheinen tietovisa!</p>
+                </div>
+
+                <div class="form-check" id="visa">
+                    <h6>Minä vuonna avattiin Tampereen maauimala?</h6>
+                    <img src="img/maauimala.jpg" alt="maauimala" class="img-fluid mb-2" />
+
+                    <ul>
+                        <li>
+                            <input type="radio" id="uima1" name="q1" value="0" class="form-check-input answer">
+                            <label class="form-check-label" for="uima1">1975</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="uima2" name="q1" value="0"class="form-check-input answer">
+                            <label class="form-check-label" for="uima2">1998</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="uima3" name="q1" value="1"class="form-check-input answer">
+                            <label class="form-check-label" for="uima3">2018</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible" id="q1">Tampereen uintikeskus eli <i>Kalevan uimahalli</i> sijaitsee Kalevan kaupunginosassa ja 
+                        on Tampereen suurin uimahalli. Hallin yhteydessä sijaitsee Tampereen ainoa maauimala, joka avattiin elokuussa 2018. 
+                        Maauimalassa on lastenallas, 25 metriä pitkä hyppyallas, 50 metriä pitkä kuntoallas, suihkut, saunat 
+                        ja kahvio. 
+                    </p>
+                </div>
+
+                <div class="form-check" id="visa">
+                    <h6>Mitä erikoista on Pyynikin kesäteatterissa?</h6>
+                    <img src="img/kesateatteri.jpg" alt="kesäteatteri" class="img-fluid mb-2" />
+                    <ul>
+                        <li>
+                            <input type="radio" id="pyy1" name="q2" value="0" class="form-check-input answer">
+                            <label class="form-check-label" for="pyy1">Teatteri on saaressa</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="pyy2" name="q2" value="1"class="form-check-input answer">
+                            <label class="form-check-label" for="pyy2">Teatterissa on pyörivä katsomo</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="pyy3" name="q2" value="0"class="form-check-input answer">
+                            <label class="form-check-label" for="pyy3">Teatterissa on tuulimylly</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible" id="q2">Pyynikin kesäteatterin katsomo on valmistunut 1959, 
+                        ja oli lajissaan ensimmäinen joka toimi sähköisellä koneistolla. Katsomoon mahtuu 836 
+                        katsojaa.
+                    </p>
+                </div>
+
+                <div class="form-check" id="visa">
+                    <h6>Kuinka paljon työntekijöitä Finlaysonin tehtaalla oli enimmillään  1900-luvun alussa?</h6>
+                    <img src="img/finlayson.jpg" alt="finlayson" class="img-fluid mb-2" />
+                    <ul>
+                        <li>
+                            <input type="radio" id="fin1" name="q3" value="0" class="form-check-input answer">
+                            <label class="form-check-label" for="fin1">noin 900 työntekijää</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="fin2" name="q3" value="0"class="form-check-input answer">
+                            <label class="form-check-label" for="fin2">noin 1400 työntekijää</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="fin3" name="q3" value="1"class="form-check-input answer">
+                            <label class="form-check-label" for="fin3">noin 3300 työntekijää</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible" id="q3">Tehtaan perusti skotlantilainen James Finlayson 1820. 
+                        Puuvillatehtaasta tuli tuhansien ihmisten työpaikka - alueella oli oma poliisi, palokunta, sairaala, koulu ja vanhainkoti. 
+                        1800-luvulla käytössä oli jopa omaa rahaa!
+                    </p>
+                </div>
+
+                <div class="form-check" id="visa">
+                    <h6>Missä Muumimuseo EI ole sijainnut vuosien varrella?</h6>
+                    <img src="img/muumimuseo.jpg" alt="muumimuseo" class="img-fluid mb-2" />
+
+                    <ul>
+                        <li>
+                            <input type="radio" id="muu1" name="q4" value="0" class="form-check-input answer">
+                            <label class="form-check-label" for="muu1">Tampere-talossa</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="muu2" name="q4" value="1"class="form-check-input answer">
+                            <label class="form-check-label" for="muu2">Museokeskus Vapriikissa</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="muu3" name="q4" value="0"class="form-check-input answer">
+                            <label class="form-check-label" for="muu3">Pääkirjasto Metsossa</label> 
+                        </li>
+                    </ul>
+                    <p class="not_visible" id="q4">Tampere-talossa sijaitsee maailman ainoa Muumimuseo. 
+                        25 vuoden ajan museo sijaitsi pääkirjasto Metson alakerrassa, jonka jälkeen se muutti 
+                        väliaikaisesti Tampereen Taidemuseon tiloihin.<br><br><span id="scorespan">Tuloksesi <span id="score"></span>/4 oikein</span>
+                    </p> 
+                </div>
+                
+            </div>
+        </section>
+
+        <footer class="row mt-5">
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-start">Susanna Salakari<br>2021</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-end">Bootstrap and jQuery</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" 
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" 
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" 
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/salakari.js" type="text/javascript"></script>
+</body>
+</html>
