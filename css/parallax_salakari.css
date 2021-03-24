@@ -4,7 +4,7 @@ https://www.w3schools.com/howto/howto_css_parallax.asp
 
 body, html, main, section {
     height: 100%; /* this is a must for parallax. */
-    font-size: 97%;
+    font-size: 100%;
     background-color: white;
   }
   
@@ -18,6 +18,14 @@ body, html, main, section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.text p {
+  font-size: 90%;
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
   
 #bg1 {
     background-image: url("../img/vaaka_lehmat.jpg");
@@ -26,7 +34,7 @@ body, html, main, section {
   
 #bg2 {
   background-image: url("../img/vaaka_halli.jpg");
-  height: 90%; 
+  height: 80%; 
 }
 
 #bg3 {
@@ -75,13 +83,12 @@ body, html, main, section {
 }
 
 .caption2 span.border {
-  background-color: #FEF9C7;
+  background-color: white;
   color: #026670;
   border: none !important;
   padding: 12px;
   font-size: 2em;
   letter-spacing: 10px;
-  /* line-height: 2em; */
 }
 
 .text {
@@ -93,7 +100,47 @@ body, html, main, section {
     text-align: center;
 }
 
+.bgblue {
+  background-color: #026670;
+}
 
+.bgblue p{
+  background-color: #026670;
+  color: #fff;
+}
+
+.bgblue h3 {
+  background-color: #026670;
+  color: #fff;
+}
+
+a {
+  color: #F4976C;
+}
+a:hover {
+  color: #FCE181;
+}
+
+.bgblue a {
+  color: #FCE181;
+}
+.bgblue a:hover {
+  color: #F4976C;
+}
+
+.pfooter {
+  background-color: white !important;
+}
+
+.pfooter p {
+  color: #026670;
+  font-size: 100%;
+}
+
+.text {
+  padding: 30px 10px 30px 10px !important;
+  position: relative;
+}
 
   
   /* Turn off parallax scrolling for all tablets and phones. 
