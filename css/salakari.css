@@ -108,10 +108,13 @@ a:hover {
 
 .wrong {
     background-color: red;
+    color: white;
 }
 
 .right {
-    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background-color: green;
 }
 
 .not_visible {
@@ -148,8 +151,6 @@ a[data-bs-toggle="popover"]:focus {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 10px 20px 20px 20px;  */
-
 }
 
 img {

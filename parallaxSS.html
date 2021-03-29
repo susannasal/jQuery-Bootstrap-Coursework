@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Susanna Salakari" name="author">
-    <title>My Bootstrap project - SS</title>
+    <title>Parallax, Susannan sivut - SS</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/salakari.css">
     <link rel="stylesheet" href="css/parallax_salakari.css">
@@ -15,11 +15,10 @@
 
         <header class="row">
             <div class="col-12">
-                <h1>My Bootstrap project</h1>
+                <h1>Susannan sivut</h1>
             </div>
             <!-- navbar: perusasettelu -->
             <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <!-- <div class="container-fluid"> -->
                     <!-- hampurilaisvalikko -->
                     <button type="button" class="navbar-toggler"
                     data-bs-toggle="collapse" data-bs-target="#valikko"
@@ -32,7 +31,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" 
-                                href="index.html">Tampere</a>
+                                href="index.html">Kaupunkini</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link" aria-current="page" 
@@ -60,124 +59,126 @@
             </nav>
         </header>
 
-        <section class="row col-12">
+        <section class="row">
+            <!-- <div class="col-12"> -->
    
                 <!-- parallax image -->
-            <div id="bg1" class="parallax"> 
-                <div class="caption">
-                    <span class="border">TAMPERE</span>
-                </div>
-            </div>
-
-            <!-- the text that scrolls over the image -->
-            <div class="text"> 
-                <h3>Ahlmanin Tilapuoti</h3>
-                <p>Ahlmanin tilapuodista ja kahvilasta löydät vaihtuvan valikoiman 
-                    oman tilan tuotteita, oman leipomon lämpimäisiä sekä paikallisten pientuottajien valikoimaa.</p>
-                <p>Ahlmanin omat tilatuotteet valmistetaan käsityönä pienissä erissä perinteitä vaalien ja aidot raaka-aineet 
-                    takaavat hienostuneen luonnolliset maut. Ahlmanin Tilameijerin ylpeys on omassa juustokellarissa kypsynyt 
-                    sinihomejuusto, jonka pehmeä maku sopii erityisesti herkutteluhetkiin. Tilajuustot ovat lähiruokaa maukkaimmillaan.</p>
-                <p>Lähde: <a href="https://visittampere.fi/kohteet/ahlmanin-tilapuoti/" target="_blank">
-                    Visit Tampere</a></p>
-            </div>
-
-            <!-- parallax image, no text over the image -->
-            <div id="bg2" class="parallax">
-                <!-- <div class="caption2">
-                    <span class="border">HALLI</span>
-                </div> -->
-            </div>
-
-            <!-- the text that scrolls over the image -->
-            <div class="text bgblue">
-                <h3>Kauppahalli</h3>
-                <p>Tampereen Kauppahalli on koko kaupungin sydän. Sen upea arkkitehtuuri ja ystävälliset kauppiaat eivät jätä 
-                    ketään kylmäksi. Kauppahalli on paikka jokaiselle, joka rakastaa hyvää ruokaa, arvostaa paikallisia kädentaitoja 
-                    ja haluaa viettää kiireettömän herkutteluhetken kantakaupungin sykkeessä.</p>
-                <p>Tampereen Kauppahallista löydät herkullisimmat aamiais- ja lounasravintolat, suussasulavat kakut ja makeiset, 
-                    laadukkaat herkkutuotteet ja kauden vihannekset sekä tietysti taidokkaimmat käsityöt ja kukkasidontatyöt. 
-                    Kauppahalli on paikka jokaiselle foodielle, herkuttelijalle, aloittelijalle ja arkikokille, sillä raaka-aineiden 
-                    lisäksi kauppiailta saa reseptin ja vielä hymynkin kaupanpäälle. Tervetuloa myös iltahalliin joka kuukauden 
-                    ensimmäinen perjantai! Iltahalleissa DJ:t pitävät tunnelman korkealla ja voit naustiskella ostosten lomassa vaikka 
-                    herkullisen illallisen tai kiinnostavan pienpanimo-oluen.</p>
-                <p>Lähde: <a href="https://visittampere.fi/kohteet/tampereen-kauppahalli/" target="_blank">
-                    Visit Tampere</a></p>
-            </div>
-
-            <!-- parallax image, no text over the image -->
-            <div id="bg3" class="parallax">
-                <!-- <div class="caption2">
-                    <span class="border">ART AREA</span>
-                </div> -->
-            </div>
-
-            <!-- the text that scrolls over the image -->
-            <div class="text">
-                <h3>Finlayson Art Area</h3>
-                <p>Finlayson Art Area on mielenkiintoinen visuaalisten taiteiden vuosittainen ilmaistapahtuma Finlaysonin alueella. 
-                    Ripoteltuna ympäriinsä Tampereen “vanhan kaupungin” gallerioita ja kujia tämä tapahtuma kerää yhteen tunnettuja ja 
-                    ei-niin-tunnettuja taiteilijoita Suomesta ja ulkomailta.</p>
-                <p>Taidetapahtuma Finlayson Art Area (FAA) järjestetään jo kuudennen kerran tänä kesänä Tampereella. 
-                    Tapahtuma houkuttelee vuosittain paikalle runsaasti taiteen ystäviä ja useita taiteilijoita Suomesta ja maailmalta.</p>
-                <p>Lähde: <a href="https://visittampere.fi/tapahtumat/finlayson-art-area/" target="_blank">
-                    Visit Tampere</a></p>
-            </div>
-
-            <!-- parallax image, no text over the image -->
-            <div id="bg4" class="parallax">
-                <!-- <div class="caption2">
-                    <span class="border">TAPAHTUMAT</span>
-                </div> -->
-            </div>
-
-            <!-- the text that scrolls over the image -->
-            <div class="text bgblue">
-                <h3>Tapahtumakalenteri</h3>
-                <p>Tampere tunnetaan tapahtumien ytimenä, jossa viihtyvät niin musiikin, teatterin, museoiden kuin designin ystävät. 
-                    Tapahtumakalenterin avulla löydät aina kiinnostavaa tekemistä, näkemistä ja koettavaa koko Tampereen seudulta.</p>
-                <p>Listaukseen vuoden 2021 tapahtumista pääset <a href="https://visittampere.fi/tampereen-tapahtumia/" target="_blank">
-                    tästä linkistä</a></p>
-                <p>Lähde: <a href="https://visittampere.fi/tapahtumakalenteri/" target="_blank">
-                    Visit Tampere</a></p>
-            </div>
-
-            <!-- parallax image, no text over the image -->
-            <div id="bg5" class="parallax">
-                <div class="caption2">
-                    <span class="border">TAIDETTA</span>
-                </div>                
-            </div>
-
-            <!-- the text that scrolls over the image -->
-            <div class="text">
-                <h3>Taidekeskus Mältinranta</h3>
-                <p>Taidekeskus Mältinrannasta löydät vaihtuvat nykytaiteen näyttelyt ja taidelainaamon. 
-                    Tampereen Taiteilijaseura ry:n ylläpitämä galleria on tunnettu korkeatasoisista nykytaiteen näyttelyistä. Vapaa pääsy!</p>
-                <p>Museoiden suurten vaihtuvien näyttelyiden ja pysyvien kokoelmien lisäksi Tampereelta löytyy paljon taide-elämyksiä myös kaupungin 
-                    gallerioissa, kahviloissa ja muissa pienemmissäkin tiloissa.</p>
-                <p>Lähde: <a href="https://visittampere.fi/artikkelit/taidetta-gallerioissa-ja-kahviloissa/" target="_blank">
-                    Visit Tampere</a></p>
-            </div>
-
-            <!-- parallax image, no text over the image -->
-            <div id="bg6" class="parallax">
-                <div class="caption">
-                    <!-- the actual text -->
-                    <span class="border">TERVETULOA TAMPEREELLE!</span>
-                </div>
-            </div>
-
-            <!-- the text that scrolls over the image -->
-            <div class="text wide" id="pfooter">  
-                <footer class="row pfooter">
-                    <div class="col-12 col-md-6">
-                        <p class="text-center text-md-start">Susanna Salakari<br>2021</p>
+                <div id="bg1" class="parallax"> 
+                    <div class="caption">
+                        <span class="border">TAMPERE</span>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <p class="text-center text-md-end">Bootstrap and jQuery</p>
+                </div>
+
+                <!-- the text that scrolls over the image -->
+                <div class="text"> 
+                    <h3>Ahlmanin Tilapuoti</h3>
+                    <p>Ahlmanin tilapuodista ja kahvilasta löydät vaihtuvan valikoiman 
+                        oman tilan tuotteita, oman leipomon lämpimäisiä sekä paikallisten pientuottajien valikoimaa.</p>
+                    <p>Ahlmanin omat tilatuotteet valmistetaan käsityönä pienissä erissä perinteitä vaalien ja aidot raaka-aineet 
+                        takaavat hienostuneen luonnolliset maut. Ahlmanin Tilameijerin ylpeys on omassa juustokellarissa kypsynyt 
+                        sinihomejuusto, jonka pehmeä maku sopii erityisesti herkutteluhetkiin. Tilajuustot ovat lähiruokaa maukkaimmillaan.</p>
+                    <p>Lähde: <a href="https://visittampere.fi/kohteet/ahlmanin-tilapuoti/" target="_blank">
+                        Visit Tampere</a></p>
+                </div>
+
+                <!-- parallax image, no text over the image -->
+                <div id="bg2" class="parallax">
+                    <!-- <div class="caption2">
+                        <span class="border">HALLI</span>
+                    </div> -->
+                </div>
+
+                <!-- the text that scrolls over the image -->
+                <div class="text bgblue">
+                    <h3>Kauppahalli</h3>
+                    <p>Tampereen Kauppahalli on koko kaupungin sydän. Sen upea arkkitehtuuri ja ystävälliset kauppiaat eivät jätä 
+                        ketään kylmäksi. Kauppahalli on paikka jokaiselle, joka rakastaa hyvää ruokaa, arvostaa paikallisia kädentaitoja 
+                        ja haluaa viettää kiireettömän herkutteluhetken kantakaupungin sykkeessä.</p>
+                    <p>Tampereen Kauppahallista löydät herkullisimmat aamiais- ja lounasravintolat, suussasulavat kakut ja makeiset, 
+                        laadukkaat herkkutuotteet ja kauden vihannekset sekä tietysti taidokkaimmat käsityöt ja kukkasidontatyöt. 
+                        Kauppahalli on paikka jokaiselle foodielle, herkuttelijalle, aloittelijalle ja arkikokille, sillä raaka-aineiden 
+                        lisäksi kauppiailta saa reseptin ja vielä hymynkin kaupanpäälle. Tervetuloa myös iltahalliin joka kuukauden 
+                        ensimmäinen perjantai! Iltahalleissa DJ:t pitävät tunnelman korkealla ja voit naustiskella ostosten lomassa vaikka 
+                        herkullisen illallisen tai kiinnostavan pienpanimo-oluen.</p>
+                    <p>Lähde: <a href="https://visittampere.fi/kohteet/tampereen-kauppahalli/" target="_blank">
+                        Visit Tampere</a></p>
+                </div>
+
+                <!-- parallax image, no text over the image -->
+                <div id="bg3" class="parallax">
+                    <!-- <div class="caption2">
+                        <span class="border">ART AREA</span>
+                    </div> -->
+                </div>
+
+                <!-- the text that scrolls over the image -->
+                <div class="text">
+                    <h3>Finlayson Art Area</h3>
+                    <p>Finlayson Art Area on mielenkiintoinen visuaalisten taiteiden vuosittainen ilmaistapahtuma Finlaysonin alueella. 
+                        Ripoteltuna ympäriinsä Tampereen “vanhan kaupungin” gallerioita ja kujia tämä tapahtuma kerää yhteen tunnettuja ja 
+                        ei-niin-tunnettuja taiteilijoita Suomesta ja ulkomailta.</p>
+                    <p>Taidetapahtuma Finlayson Art Area (FAA) järjestetään jo kuudennen kerran tänä kesänä Tampereella. 
+                        Tapahtuma houkuttelee vuosittain paikalle runsaasti taiteen ystäviä ja useita taiteilijoita Suomesta ja maailmalta.</p>
+                    <p>Lähde: <a href="https://visittampere.fi/tapahtumat/finlayson-art-area/" target="_blank">
+                        Visit Tampere</a></p>
+                </div>
+
+                <!-- parallax image, no text over the image -->
+                <div id="bg4" class="parallax">
+                    <!-- <div class="caption2">
+                        <span class="border">TAPAHTUMAT</span>
+                    </div> -->
+                </div>
+
+                <!-- the text that scrolls over the image -->
+                <div class="text bgblue">
+                    <h3>Tapahtumakalenteri</h3>
+                    <p>Tampere tunnetaan tapahtumien ytimenä, jossa viihtyvät niin musiikin, teatterin, museoiden kuin designin ystävät. 
+                        Tapahtumakalenterin avulla löydät aina kiinnostavaa tekemistä, näkemistä ja koettavaa koko Tampereen seudulta.</p>
+                    <p>Listaukseen vuoden 2021 tapahtumista pääset <a href="https://visittampere.fi/tampereen-tapahtumia/" target="_blank">
+                        tästä linkistä</a></p>
+                    <p>Lähde: <a href="https://visittampere.fi/tapahtumakalenteri/" target="_blank">
+                        Visit Tampere</a></p>
+                </div>
+
+                <!-- parallax image, no text over the image -->
+                <div id="bg5" class="parallax">
+                    <div class="caption2">
+                        <span class="border">TAIDETTA</span>
+                    </div>                
+                </div>
+
+                <!-- the text that scrolls over the image -->
+                <div class="text">
+                    <h3>Taidekeskus Mältinranta</h3>
+                    <p>Taidekeskus Mältinrannasta löydät vaihtuvat nykytaiteen näyttelyt ja taidelainaamon. 
+                        Tampereen Taiteilijaseura ry:n ylläpitämä galleria on tunnettu korkeatasoisista nykytaiteen näyttelyistä. Vapaa pääsy!</p>
+                    <p>Museoiden suurten vaihtuvien näyttelyiden ja pysyvien kokoelmien lisäksi Tampereelta löytyy paljon taide-elämyksiä myös kaupungin 
+                        gallerioissa, kahviloissa ja muissa pienemmissäkin tiloissa.</p>
+                    <p>Lähde: <a href="https://visittampere.fi/artikkelit/taidetta-gallerioissa-ja-kahviloissa/" target="_blank">
+                        Visit Tampere</a></p>
+                </div>
+
+                <!-- parallax image, no text over the image -->
+                <div id="bg6" class="parallax">
+                    <div class="caption">
+                        <!-- the actual text -->
+                        <span class="border">TERVETULOA TAMPEREELLE!</span>
                     </div>
-                </footer>
-            </div> 
+                </div>
+
+                <!-- the text that scrolls over the image -->
+                <div class="text wide" id="pfooter">  
+                    <footer class="row pfooter">
+                        <div class="col-12 col-md-6">
+                            <p class="text-center text-md-start">Susanna Salakari<br>2021</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="text-center text-md-end">Bootstrap and jQuery</p>
+                        </div>
+                    </footer>
+                </div>
+            <!-- </div>  -->
         </section>
     </main>
 
