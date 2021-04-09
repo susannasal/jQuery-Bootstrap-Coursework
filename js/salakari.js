@@ -1,6 +1,5 @@
 $(document).ready(function(){
             
-    // QUIZ : KUN JOKU VALITTU > DISABLE MUUT VAIHTOEHDOT 
     /**
      * When option selected, disable other radio buttons
      */
@@ -10,7 +9,6 @@ $(document).ready(function(){
         $(lukkoon).prop("disabled", true);
     });
 
-    // QUIZ : MERKITÄÄN OIKEA JA VÄÄRÄ VASTAUS
     /**
      * Mark right and wrong quiz answer by highlighting with red / green
      */
@@ -39,7 +37,6 @@ $(document).ready(function(){
 
     });  
 
-    // QUIZ : TEKSTI PIILOSTA ESIIN
     /**
      * Reveal quiz text when radio button has been selected
      */
